@@ -21,33 +21,33 @@ int divisors(int n);
 
 int main()
 {
-	int i = 1, other = 2;
+    int i = 1, other = 2;
 
-	while(1)
-	{
-		if((divisors(i)) >= 500)
-		{
-			printf("%d\n", i);
-			break;
-		}
-		i += other;
-		other++;
-	}
-	return 0;
+    while(1)
+    {
+        if((divisors(i)) >= 500)
+        {
+            printf("%d\n", i);
+            break;
+        }
+        i += other;
+        other++;
+    }
+    return 0;
 }
 
 
 int divisors(int n)
 {
-	int count = 0, k;
+    int count = 0, k;
 
-	for(k=1; k<=sqrt(n); k++)
-	{
-		if((n % k) == 0)
-		{
-			count += 2;
-		}
-	}
-	count += 1;
-	return count;
+    for(k=1; k<=sqrt(n); k++)
+    {
+        if((n % k) == 0)
+        {
+            count += 2;
+        }
+    }
+    count += 1;
+    return count;
 }
