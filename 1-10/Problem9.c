@@ -23,7 +23,7 @@ for (a=1; a<limit; a++)
     {
         c = limit - a - b;
  
-        if ((a * a) + (b * b) == (c * c))
+        if ((a * a) + (b * b) == (c * c) && (a + b + c)  == 1000)
         {
             found = true;
             product = a * b * c;
